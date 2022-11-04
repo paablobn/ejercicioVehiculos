@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moto_activity">
+
+    <EditText
+        android:id="@+id/txtMarcaMoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Marca"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtModeloMoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtModeloMoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Modelo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtCCMoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarcaMoto" />
+
+    <Button
+        android:id="@+id/btnCancelarMoto"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="19dp"
+        android:text="cancelar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCrearMoto"
+        app:layout_constraintEnd_toStartOf="@+id/btnCrearMoto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCCMoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:hint="cc"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrearMoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtModeloMoto" />
+
+    <Button
+        android:id="@+id/btnCrearMoto"
+        android:layout_width="134dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="275dp"
+        android:text="crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelarMoto"
+        app:layout_constraintTop_toBottomOf="@+id/txtCCMoto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

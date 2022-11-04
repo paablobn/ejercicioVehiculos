@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bici_activity">
+
+    <EditText
+        android:id="@+id/txtMarcaBici"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:hint="Marca"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPulgadasBici"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Pulgadas"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarcaBici" />
+
+    <Button
+        android:id="@+id/btnCancelarBici"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="97dp"
+        android:text="cancelar"
+        app:layout_constraintEnd_toEndOf="@+id/btnCrearBici"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPulgadasBici" />
+
+    <Button
+        android:id="@+id/btnCrearBici"
+        android:layout_width="161dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="99dp"
+        android:text="crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPulgadasBici" />
+</androidx.constraintlayout.widget.ConstraintLayout>
